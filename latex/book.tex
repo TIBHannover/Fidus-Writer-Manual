@@ -1,0 +1,31 @@
+\documentclass[11pt]{book}
+
+                
+\usepackage[backend=biber,hyperref=false,citestyle=authoryear,bibstyle=authoryear]{biblatex}
+                
+\bibliography{bibliography}
+            
+\usepackage{docmute}
+\title{The Fidus Writer User Manual}
+\author{Simon Worthington; Johannes Wilm; Peter Tinnemann}
+\begin{document}
+\maketitle
+\def\title#1{\chapter{#1}}
+\tableofcontents
+
+        \input{chapter-1}
+        
+        \input{chapter-2}
+        
+        \input{chapter-3}
+        
+        \input{chapter-4}
+        
+        \input{chapter-5}
+        
+        \input{chapter-6}
+        
+
+
+\printbibliography[title={Bibliography}]
+\end{document}
