@@ -1,37 +1,141 @@
 \documentclass{article}
 
-                
-\usepackage[backend=biber,hyperref=false,citestyle=authoryear,bibstyle=authoryear]{biblatex}
-                
-\bibliography{bibliography}
-            
+\usepackage{hyperref}
+\usepackage{enumitem}
 \begin{document}
 
-\title{FWM002 - Writing }
+\title{Fidus GitHub Workflow}
 
 \maketitle
 
 
-\subsection{Citations}\label{H5773217}
+Any edits, comments, or questions or if you want to make contributions please make a pull request, raise an issue - or request Fidus Writer edit access. Contact: Simon Worthington, \href{https://github.com/mrchristian}{https://github.com/mrchristian}
+
+
+\subsection{What you will learn here}\label{H8939544}
+
+
+\begin{enumerate}
+\item To connect two programmes together: Fidus Writer and Github
+
+
+\item Export your book to GitHub
+
+
+\item A GitHub workflow
+
+
+\item To setup a collaborative work environment 
+
+
+\item How to manage changes to a book from multiple contributors
+
+
+\end{enumerate}
+
+\subsection{Setup: 3 steps}\label{H1462292}
+
+
+\begin{enumerate}
+\item \subsubsection{Connecting GitHub account to Fidus Writer}\label{H5477297}
 
 
 
-\subsubsection{Permissions on Bibiographies}\label{H1368393}
+\end{enumerate}
+\begin{itemize}
+\item Create or use a GitHub account
+
+
+\item Add your user account via the profile area, click your profile button - top right
+
+
+\item In the section 'Add Social Provider' input your account details and follow instructions in diaglogs from GitHub. This process will allow Fidus Writer to access your GitHub account services and export books.
+
+
+\item You can now return to your book
+
+
+\end{itemize}
+\begin{enumerate}[start=2]
+\item \subsubsection{Select GitHub repository to export to}\label{H3699755}
 
 
 
-\subsubsection{Zotero}\label{H899131}
+\end{enumerate}
+\begin{itemize}
+\item Make a repository on GitHub
+
+
+\item Click on your book in Fidus Writer and open the book information panel
+
+
+\item Select the repository that you made as the repository to export your book to
+
+
+\item Choose the export format options: HTML, EPUB, expanded EPUB, etc.
+
+
+\item Close the book dialog box and your book is now ready for export. 
+
+
+\end{itemize}
+\begin{enumerate}[start=3]
+\item \subsubsection{Export book to GitHub}\label{H6727539}
 
 
 
-These can be inserted into a document and into the Bibliography manager.
+\end{enumerate}
+\begin{itemize}
+\item Navigate to the book list in the Fidus Writer \textbf{Books} area and select the tickbox to left of the book
 
 
-Inserting Zotero citations as fully intergrated citations in Fidus' Bibliography manager. See the full video for instructions here \autocite{technische_universitat_munchen_fidus_nodate}
+\item Once the book tickbox is selected then from drop down menu at top - select export to Github - your book will now be exported to GitHub. A dialog box bottom right will give information on the export status.
+
+
+\item Navigate to GitHub to view the export results.
+
+
+\subsubsection{The GitHub Workflow}\label{H5994203}
+
+
+
+This examples covers how to work with several co-authors on one book, where style additions will be made on GitHub. Note content issues are not made on GitHub - only on Fidus Writer (at present 4.2021).
+
+
+Contributors here will only work on styles: CSS, HTML or XHTML if needed, and assets like images and fonts.
+
+\begin{enumerate}
+\item Book is exported my Editor in Chief to publishing repo
+
+
+\item Editor in Chief creates 'design' branch
+
+
+\item Contributors fork 'publishing' repo and in their own repo create branch in their name 'name-design'
+
+
+\item Design work should be done on the branch.
+
+
+\item GitHub pages can be set to render branch.
+
+
+\item Contributor can keep their main up-to-date from publishing repo using Pull Requests, and further update their branch if needed, being careful to not overwrite their own changes.
+
+
+\item Contributor can make Pull Requests back to publishing repo to the design branch.
+
+
+\item Editor-in-Chief will accept Pull request into design branch, or reject, or add to a new branch in name of designer. At end Editor-in-Chief will commit to main.
+
+
+\end{enumerate}
 
 
 
 
+\end{itemize}
 
-\printbibliography[title={Literaturverzeichnis}]
+
+
 \end{document}
