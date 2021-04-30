@@ -18,60 +18,88 @@
       <content src="titlepage.xhtml#title" />
     </navPoint>
     <navPoint id="t_1_0-1">
-      <navLabel><text>FWM000 - Front Matter</text></navLabel>
+      <navLabel><text>FWM001 - Introduction</text></navLabel>
       <content src="document-1.xhtml#_1_0" />
     </navPoint>
     <navPoint id="t_2_0-2">
-      <navLabel><text>FWM001 - Introduction</text></navLabel>
+      <navLabel><text>FWM000 - Front Matter</text></navLabel>
       <content src="document-2.xhtml#_2_0" />
     </navPoint>
     <navPoint id="t_3_0-3">
-      <navLabel><text>FWM002 - Writing</text></navLabel>
+      <navLabel><text>Fidus GitHub Workflow</text></navLabel>
       <content src="document-3.xhtml#_3_0" />
-      <navPoint id="tH5773217-3">
-        <navLabel><text>Citations</text></navLabel>
-        <content src="document-3.xhtml#H5773217" />
-        <navPoint id="tH1368393-3">
-          <navLabel><text>Permissions on Bibiographies</text></navLabel>
-          <content src="document-3.xhtml#H1368393" />
+      <navPoint id="tH8939544-3">
+        <navLabel><text>What you will learn here</text></navLabel>
+        <content src="document-3.xhtml#H8939544" />
+      </navPoint>
+      <navPoint id="tH1462292-3">
+        <navLabel><text>Setup: 3 steps</text></navLabel>
+        <content src="document-3.xhtml#H1462292" />
+        <navPoint id="tH5477297-3">
+          <navLabel><text>Connecting GitHub account to Fidus Writer</text></navLabel>
+          <content src="document-3.xhtml#H5477297" />
         </navPoint>
-        <navPoint id="tH899131-3">
-          <navLabel><text>Zotero</text></navLabel>
-          <content src="document-3.xhtml#H899131" />
+        <navPoint id="tH3699755-3">
+          <navLabel><text>Select GitHub repository to export to</text></navLabel>
+          <content src="document-3.xhtml#H3699755" />
+        </navPoint>
+        <navPoint id="tH6727539-3">
+          <navLabel><text>Export book to GitHub</text></navLabel>
+          <content src="document-3.xhtml#H6727539" />
+        </navPoint>
+        <navPoint id="tH5994203-3">
+          <navLabel><text>The GitHub Workflow</text></navLabel>
+          <content src="document-3.xhtml#H5994203" />
         </navPoint>
       </navPoint>
     </navPoint>
     <navPoint id="t_4_0-4">
-      <navLabel><text>FWM005 - Typsetting Design and Exporting</text></navLabel>
+      <navLabel><text>FWM002 - Writing</text></navLabel>
       <content src="document-4.xhtml#_4_0" />
-      <navPoint id="tH9847832-4">
-        <navLabel><text>GitHub export</text></navLabel>
-        <content src="document-4.xhtml#H9847832" />
-        <navPoint id="tH9144388-4">
-          <navLabel><text>Setup</text></navLabel>
-          <content src="document-4.xhtml#H9144388" />
+      <navPoint id="tH5773217-4">
+        <navLabel><text>Citations</text></navLabel>
+        <content src="document-4.xhtml#H5773217" />
+        <navPoint id="tH1368393-4">
+          <navLabel><text>Permissions on Bibiographies</text></navLabel>
+          <content src="document-4.xhtml#H1368393" />
+        </navPoint>
+        <navPoint id="tH899131-4">
+          <navLabel><text>Zotero</text></navLabel>
+          <content src="document-4.xhtml#H899131" />
         </navPoint>
       </navPoint>
     </navPoint>
     <navPoint id="t_5_0-5">
-      <navLabel><text>FWM003 - Admin</text></navLabel>
+      <navLabel><text>FWM005 - Typsetting Design and Exporting</text></navLabel>
       <content src="document-5.xhtml#_5_0" />
-      <navPoint id="tH8791447-5">
-        <navLabel><text>Adding static pages</text></navLabel>
-        <content src="document-5.xhtml#H8791447" />
-        <navPoint id="tH2279564-5">
-          <navLabel><text>Adding static pages links to the home page</text></navLabel>
-          <content src="document-5.xhtml#H2279564" />
-        </navPoint>
-        <navPoint id="tH9537775-5">
-          <navLabel><text>Adding users</text></navLabel>
-          <content src="document-5.xhtml#H9537775" />
+      <navPoint id="tH9847832-5">
+        <navLabel><text>GitHub export</text></navLabel>
+        <content src="document-5.xhtml#H9847832" />
+        <navPoint id="tH9144388-5">
+          <navLabel><text>Setup</text></navLabel>
+          <content src="document-5.xhtml#H9144388" />
         </navPoint>
       </navPoint>
     </navPoint>
     <navPoint id="t_6_0-6">
-      <navLabel><text>FWM004 - Glossary</text></navLabel>
+      <navLabel><text>FWM003 - Admin</text></navLabel>
       <content src="document-6.xhtml#_6_0" />
+      <navPoint id="tH8791447-6">
+        <navLabel><text>Adding static pages</text></navLabel>
+        <content src="document-6.xhtml#H8791447" />
+        <navPoint id="tH2279564-6">
+          <navLabel><text>Adding static pages links to the home page</text></navLabel>
+          <content src="document-6.xhtml#H2279564" />
+        </navPoint>
+        <navPoint id="tH9537775-6">
+          <navLabel><text>Adding users</text></navLabel>
+          <content src="document-6.xhtml#H9537775" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="t_7_0-7">
+      <navLabel><text>FWM004 - Glossary</text></navLabel>
+      <content src="document-7.xhtml#_7_0" />
     </navPoint>
     <navPoint id="t2">
       <navLabel><text>Copyright</text></navLabel>
