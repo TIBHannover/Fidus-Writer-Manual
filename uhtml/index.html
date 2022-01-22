@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The Fidus Writer User Manual</title>
+    <link type="text/css" rel="stylesheet" href="css/book.css" />
+    <style>
+      a.fn {
+        -adapt-template: url(data:application/xml,%3Chtml%20xmlns=%22http://www.w3.org/1999/xhtml%22%20xmlns:s=%22http://www.pyroxy.com/ns/shadow%22%3E%3Chead%3E%3Cstyle%3E.footnote-content%7Bfloat:footnote%7D%3C/style%3E%3C/head%3E%3Cbody%3E%3Cs:template%20id=%22footnote%22%3E%3Cs:content/%3E%3Cs:include%20class=%22footnote-content%22/%3E%3C/s:template%3E%3C/body%3E%3C/html%3E#footnote);
+        text-decoration: none;
+        color: inherit;
+        vertical-align: baseline;
+        font-size: 70%;
+        position: relative;
+        top: -0.3em;
+      }
+      body {
+        background-color: white;
+      }
+      section[role=doc-footnote] .footnote-counter:after {
+        content: ". ";
+      }
+      section.fnlist {
+        display: none;
+      }
+      section:footnote-content {
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+      }
+      .table-of-contents a {
+        display: inline-flex;
+        width: 100%;
+        text-decoration: none;
+        color: currentColor;
+        break-inside: avoid;
+        align-items: baseline;
+      }
+      .table-of-contents a::before {
+        margin-left: 1px;
+        margin-right: 1px;
+        border-bottom: solid 1px lightgray;
+        content: "";
+        order: 1;
+        flex: auto;
+      }
+      .table-of-contents a::after {
+        text-align: right;
+        content: target-counter(attr(href, url), page);
+        align-self: flex-end;
+        flex: none;
+        order: 2;
+      }
+      @page {
+        size: 6in 9in;
+        @top-center {
+          content: env(doc-title);
+        }
+        @bottom-center {
+          content: counter(page);
+        }
+      }
+      @page :first {
+        @bottom-center {
+          content: normal;
+        }
+        @top-center {
+          content: normal;
+        }
+      }
+      figure img {
+        max-width: 100%;
+      }
+      .article-title {
+        page-break-before: right;
+      }
+      h1.part {
+        page-break-before: right;
+      }
+      .copyrightpage {
+        page-break-before: left;
+      }
+      .tocpage {
+        page-break-before: right;
+      }
+      .booktitle {
+        text-align: center;
+      }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/ada001.css" />
+  </head>
+  <body class="user-contents">
+    <div class="titlepage frontmatter">
+      <h1 class="booktitle">The Fidus Writer User Manual</h1>
+      <h2 class="booksubtitle">A guide to using Fidus Writer </h2>
+      <h3 class="bookauthor">by Simon Worthington; Johannes Wilm; Peter Tinnemann</h3>
+    </div>
+    <div class="copyrightpage frontmatter">
+      <p>Published by: Handbuch</p>
+      <p>Last Updated: 2022-01-22</p>
+      <p>Created: 2020-04-07</p>
+      <p>Language: English</p>
+      <p>Created by: Simon Worthington</p>
+    </div>
+    <div class="tocpage frontmatter">
+      <nav role="doc-toc">
+        <ol>
+          <li>
+            <a href="#_1_0">
+              FWM001 - Introduction
+            </a>
+          </li>
+          <li>
+            <a href="#_2_0">
+              FWM000 - Front Matter
+            </a>
+          </li>
+          <li>
+            <a href="#_3_0">
+              Fidus GitHub Workflow
+            </a>
+            <ol>
+              <li>
+                <a href="#H8939544">
+                  What you will learn here
+                </a>
+              </li>
+              <li>
+                <a href="#H1462292">
+                  Setup: 3 steps
+                </a>
+                <ol>
+                  <li>
+                    <a href="#H5477297">
+                      Connecting GitHub account to Fidus Writer
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#H3699755">
+                      Select GitHub repository to export to
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#H6727539">
+                      Export book to GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#H5994203">
+                      The GitHub Workflow
+                    </a>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#_4_0">
+              FWM002 - Writing
+            </a>
+            <ol>
+              <li>
+                <a href="#H5773217">
+                  Citations
+                </a>
+                <ol>
+                  <li>
+                    <a href="#H1368393">
+                      Permissions on Bibiographies
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#H899131">
+                      Zotero
+                    </a>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <a href="#_4_1">
+                  Literaturverzeichnis
+                </a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#_5_0">
+              FWM005 - Typsetting Design and Exporting
+            </a>
+            <ol>
+              <li>
+                <a href="#H9847832">
+                  GitHub export
+                </a>
+                <ol>
+                  <li>
+                    <a href="#H9144388">
+                      Setup
+                    </a>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#_6_0">
+              FWM003 - Admin
+            </a>
+            <ol>
+              <li>
+                <a href="#H8791447">
+                  Adding static pages
+                </a>
+                <ol>
+                  <li>
+                    <a href="#H2279564">
+                      Adding static pages links to the home page
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#H9537775">
+                      Adding users
+                    </a>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#_7_0">
+              FWM004 - Glossary
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="article-part article-title" id="_1_0">FWM001 - Introduction</div>
+    <div class="article-part article-richtext article-body">
+      <p></p>
+    </div>
+    <section class="fnlist" role="doc-footnotes"></section>
+    <div class="article-part article-title" id="_2_0">FWM000 - Front Matter</div>
+    <div class="article-part article-richtext article-body">
+      <p></p>
+    </div>
+    <section class="fnlist" role="doc-footnotes"></section>
+    <div class="article-part article-title" id="_3_0">Fidus GitHub Workflow</div>
+    <div class="article-part article-richtext article-body">
+      <p>Any edits, comments, or questions or if you want to make contributions please make a pull request, raise an issue - or request Fidus Writer edit access. Contact: Simon Worthington, <a href="https://github.com/mrchristian" title="https://github.com/mrchristian">https://github.com/mrchristian</a></p>
+      <h2 id="H8939544">What you will learn here</h2>
+      <ol id="L39060721">
+        <li>
+          <p>To connect two programmes together: Fidus Writer and Github</p>
+        </li>
+        <li>
+          <p>Export your book to GitHub</p>
+        </li>
+        <li>
+          <p>A GitHub workflow</p>
+        </li>
+        <li>
+          <p>To setup a collaborative work environment </p>
+        </li>
+        <li>
+          <p>How to manage changes to a book from multiple contributors</p>
+        </li>
+      </ol>
+      <h2 id="H1462292">Setup: 3 steps</h2>
+      <ol id="L47625321">
+        <li>
+          <h3 id="H5477297">Connecting GitHub account to Fidus Writer</h3>
+        </li>
+      </ol>
+      <ul id="L78728751">
+        <li>
+          <p>Create or use a GitHub account</p>
+        </li>
+        <li>
+          <p>Add your user account via the profile area, click your profile button - top right</p>
+        </li>
+        <li>
+          <p>In the section 'Add Social Provider' input your account details and follow instructions in diaglogs from GitHub. This process will allow Fidus Writer to access your GitHub account services and export books.</p>
+        </li>
+        <li>
+          <p>You can now return to your book</p>
+        </li>
+      </ul>
+      <ol id="L89468181" start="2">
+        <li>
+          <h3 id="H3699755">Select GitHub repository to export to</h3>
+        </li>
+      </ol>
+      <ul id="L25719521">
+        <li>
+          <p>Make a repository on GitHub</p>
+        </li>
+        <li>
+          <p>Click on your book in Fidus Writer and open the book information panel</p>
+        </li>
+        <li>
+          <p>Select the repository that you made as the repository to export your book to</p>
+        </li>
+        <li>
+          <p>Choose the export format options: HTML, EPUB, expanded EPUB, etc.</p>
+        </li>
+        <li>
+          <p>Close the book dialog box and your book is now ready for export. </p>
+        </li>
+      </ul>
+      <ol id="L16939281" start="3">
+        <li>
+          <h3 id="H6727539">Export book to GitHub</h3>
+        </li>
+      </ol>
+      <ul id="L15097941">
+        <li>
+          <p>Navigate to the book list in the Fidus Writer <strong>Books</strong> area and select the tickbox to left of the book</p>
+        </li>
+        <li>
+          <p>Once the book tickbox is selected then from drop down menu at top - select export to Github - your book will now be exported to GitHub. A dialog box bottom right will give information on the export status.</p>
+        </li>
+        <li>
+          <p>Navigate to GitHub to view the export results.</p>
+          <h3 id="H5994203">The GitHub Workflow</h3>
+          <p>This examples covers how to work with several co-authors on one book, where style additions will be made on GitHub. Note content issues are not made on GitHub - only on Fidus Writer (at present 4.2021).</p>
+          <p>Contributors here will only work on styles: CSS, HTML or XHTML if needed, and assets like images and fonts.</p>
+          <ol id="L68506931">
+            <li>
+              <p>Book is exported my Editor in Chief to publishing repo</p>
+            </li>
+            <li>
+              <p>Editor in Chief creates 'design' branch</p>
+            </li>
+            <li>
+              <p>Contributors fork 'publishing' repo and in their own repo create branch in their name 'name-design'</p>
+            </li>
+            <li>
+              <p>Design work should be done on the branch.</p>
+            </li>
+            <li>
+              <p>GitHub pages can be set to render branch.</p>
+            </li>
+            <li>
+              <p>Contributor can keep their main up-to-date from publishing repo using Pull Requests, and further update their branch if needed, being careful to not overwrite their own changes.</p>
+            </li>
+            <li>
+              <p>Contributor can make Pull Requests back to publishing repo to the design branch.</p>
+            </li>
+            <li>
+              <p>Editor-in-Chief will accept Pull request into design branch, or reject, or add to a new branch in name of designer. At end Editor-in-Chief will commit to main.</p>
+            </li>
+          </ol>
+          <p></p>
+        </li>
+      </ul>
+      <p></p>
+    </div>
+    <section class="fnlist" role="doc-footnotes"></section>
+    <div class="article-part article-title" id="_4_0">FWM002 - Writing </div>
+    <div class="article-part article-richtext article-body">
+      <h2 id="H5773217">Citations</h2>
+      <h3 id="H1368393">Permissions on Bibiographies</h3>
+      <h3 id="H899131">Zotero</h3>
+      <p>These can be inserted into a document and into the Bibliography manager.</p>
+      <p>Inserting Zotero citations as fully intergrated citations in Fidus' Bibliography manager. See the full video for instructions here <span class="citation">(Technische Universität München 2021)</span></p>
+      <p></p>
+    </div>
+    <section class="fnlist" role="doc-footnotes"></section>
+    <h1 class="article-bibliography-header" id="_4_1">Literaturverzeichnis</h1>
+    <div class="csl-bib-body">
+      <div class="csl-entry">Technische Universität München. 2021. “Fidus Writer at TUM.” Accessed March 23. https://wiki.tum.de/display/FidusWriter.</div>
+    </div>
+    <div class="article-part article-title" id="_5_0">FWM005 - Typsetting Design and Exporting</div>
+    <div class="article-part article-richtext article-body">
+      <h2 id="H9847832">GitHub export</h2>
+      <h3 id="H9144388">Setup</h3>
+      <p></p>
+    </div>
+    <section class="fnlist" role="doc-footnotes"></section>
+    <div class="article-part article-title" id="_6_0">FWM003 - Admin</div>
+    <div class="article-part article-richtext article-body">
+      <p></p>
+      <h2 id="H8791447">Adding static pages</h2>
+      <p></p>
+      <h3 id="H2279564">Adding static pages links to the home page</h3>
+      <h3 id="H9537775">Adding users</h3>
+      <p>Before starting it is important to note that the site owners can setup user account additions to work in two ways:</p>
+      <ol id="L58747871">
+        <li>
+          <p>Where users can register on the site,</p>
+        </li>
+        <li>
+          <p>Alternatively, where uses cannot register and instead must be invited to the site.</p>
+        </li>
+      </ol>
+      <p>There are different ways to add users to Fidus Writer:</p>
+      <ol id="L298321">
+        <li>
+          <p>Bulk addition as a Super user from /admin/auth/user/add/. Here a user can be added with: username, password, email, name, given a user role, etc.</p>
+        </li>
+        <li>
+          <p></p>
+        </li>
+      </ol>
+      <h2 id="H5769420"></h2>
+    </div>
+    <section class="fnlist" role="doc-footnotes"></section>
+    <div class="article-part article-title" id="_7_0">FWM004 - Glossary</div>
+    <div class="article-part article-richtext article-body">
+      <p></p>
+    </div>
+    <section class="fnlist" role="doc-footnotes"></section>
+  </body>
+</html>
