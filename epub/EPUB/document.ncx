@@ -82,8 +82,20 @@
       </navPoint>
     </navPoint>
     <navPoint id="t_6_0-6">
-      <navLabel><text>FWM003 - Admin</text></navLabel>
+      <navLabel><text>Admin</text></navLabel>
       <content src="document-6.xhtml#_6_0" />
+      <navPoint id="tH6398346-6">
+        <navLabel><text>Styles</text></navLabel>
+        <content src="document-6.xhtml#H6398346" />
+        <navPoint id="tH436640-6">
+          <navLabel><text>Document styles</text></navLabel>
+          <content src="document-6.xhtml#H436640" />
+        </navPoint>
+        <navPoint id="tH1305016-6">
+          <navLabel><text>Book styles</text></navLabel>
+          <content src="document-6.xhtml#H1305016" />
+        </navPoint>
+      </navPoint>
       <navPoint id="tH8791447-6">
         <navLabel><text>Adding static pages</text></navLabel>
         <content src="document-6.xhtml#H8791447" />
