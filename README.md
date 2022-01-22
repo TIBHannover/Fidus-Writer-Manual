@@ -11,8 +11,8 @@ The guide covers the complete workflow of a book production and publishing. You 
  - Real-time collaborative authoring
  - Organising book content
  - Using the citation manager and accessing external citation databases to automatically generate citations
- - Using citation style (Citation Style Languages)
- - Reviewing and open peer review and your book
+ - Using citation styles (Citation Style Languages)
+ - Reviewing and open peer review of your book
  - Creating a multi-format book design
  - Metadata and PID management
  - Open licencing, software citation, and FAIR data
