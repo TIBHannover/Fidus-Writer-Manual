@@ -13,16 +13,11 @@ The guide covers the complete workflow of a book production and publishing. You 
  - Using the citation manager and accessing external citation databases to automatically generate citations
  - Using citation styles (Citation Style Languages)
  - Reviewing and open peer review of your book
- - Creating a multi-format book design
- - Metadata and PID management
- - Open licencing, software citation, and FAIR data
- - Attribution and roles
+ - Creating a multi-format book design (see ADA)
+ - Open licencing 
  - Exporting to GitLab and GitHub
- - Outputting 'Publication Ready Outputs'
- - Distibuting your book
- - Maintaining your publication
  - Supporting remixing
- - Multilingual support and translation using Weblate
+ - Multilingual support 
 
 ## Use cases
 
