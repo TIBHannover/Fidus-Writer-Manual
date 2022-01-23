@@ -8,7 +8,7 @@ You can see the full ADA Manual [here](https://github.com/TIBHannover/ADA-manual
 
 ## What you will learn here
 
-The guide covers the complete workflow of a book production and publishing. You can manage the complete process yourself or use only the part of a workflow you need and hand over other parts to collaborators or other technical systems:
+The guide covers the workflow of a book creation and publishing on GitHub or GitLab:
 
  - Real-time collaborative authoring
  - Organising book content
