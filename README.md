@@ -1,8 +1,10 @@
-# Fidus Writer User Manual for the Rapid Publishing of Multi-format Books
+# Fidus Writer User Manual
 
 Fidus Writer is being used in the [ADA Publishing Pipeline](https://github.com/TIBHannover/ADA/) for rapid, semantic publishing of books - primarity guides. You can attach other technical system to the pipeline, or design your own pipeline.
 
 To contribute create an acount here https://write.handbuch.io/ and either raise an [issue](https://github.com/TIBHannover/Fidus-Writer-Manual/issues) or message on the ADA [community board]( https://github.com/TIBHannover/ADA/discussions) requesting access.
+
+You can see the full ADA Manual [here](https://github.com/TIBHannover/ADA-manual/blob/main/README.md).
 
 ## What you will learn here
 
@@ -25,7 +27,7 @@ https://github.com/TIBHannover/Fidus-Writer-Manual/blob/main/use-cased.md
 
 ## Quick start guide 
 
-ALO style https://blog.allo.io/
+ALLO style https://blog.allo.io/
 
 ## Full guide 
 
